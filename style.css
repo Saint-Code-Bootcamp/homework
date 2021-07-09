@@ -84,6 +84,7 @@ p {
 }
 
 .bookLink {
+    display: block;
     padding-left: 25px;
     font-size: 18px;
     text-decoration: none;
