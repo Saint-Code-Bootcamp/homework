@@ -43,12 +43,20 @@ p {
     color: blue;
 }
 
+.bookCard {
+    margin: 15px auto;
+    padding-bottom: 15px;
+    width: 750px;
+    background: linear-gradient(45deg, snow, lightskyblue);
+    box-shadow: 5px 5px 10px #ccc;
+
+}
+
 .bookTitle {
-    margin: 25px 0;
-    padding-left: 25px;
-    width: 710px;
+    padding: 10px 0 10px 25px;
     font-size: 36px;
     font-weight: bold;
+    text-align: justify;
 }
 
 .bookImage {
