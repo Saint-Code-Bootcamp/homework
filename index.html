@@ -5,107 +5,113 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="Каталог книг по веб-разработке">
+        <meta name="robots" content="noindex" />
         <title>Каталог книг</title>
         <link rel="stylesheet" href="/style.css">
+        <style>
+            .catalogHeader {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                padding: 20px 0;
+                width: 960px;
+                background: #f6f6f6;
+                text-align: center;
+            }
+
+            .catalogHeaderTitle {
+                padding-left: 25px;
+                font-size: 36px;
+                text-transform: uppercase;
+                color: blue;
+            }
+            .catalogMain {
+                margin: 0 auto;
+                width: 960px;
+            }
+            .catalogTitle {
+                cursor: pointer;
+            }
+            .catalogContacts {
+                margin: 50px 0 0 25px;
+                padding: 25px 25px;
+                width: 500px;
+                border: 1px solid #ccc;
+                box-shadow: 1px 1px 5px #808080;
+            }
+            .catalogContactsTitle {
+                font-size: 32px;
+                font-weight: bolder;
+                margin-bottom: 10px;
+            }
+            .catalogContactsSubtitle {
+                font-size: 20px;
+            }
+            .catalogContactsItems {
+                list-style: none;
+            }
+            .catalogContactsLinks_mail,
+            .catalogContactsLinks_phone {
+                position: relative;
+                font-size: 18px;
+                line-height: 34px;
+                text-align: left;
+                text-decoration: none;
+            }
+            .catalogContactsLinks_mail:before {
+                position: absolute;
+                content: url("./images/mail_send_icon.png");
+                top: -3px;
+                left: -25px;
+            }
+            .catalogContactsLinks_phone:before {
+                position: absolute;
+                content: url("./images/phone.png");
+                top: -3px;
+                left: -25px;
+            }
+            .catalogPrices {
+                margin: 50px 0 25px 25px;
+            }
+            .catalogPriceTable {
+                border-collapse: collapse;
+            }
+            .catalogPricesTitle {
+                margin-bottom: 10px;
+                font-size: 24px;
+                color: black;
+            }
+            th {
+                text-align: center;
+            }
+            td {
+                border: 1px solid #000;
+                text-align: right;
+            }
+            .catalogPricesBook {
+                text-align: left;
+            }
+            .catalogPricesLinks {
+                text-align: center;
+            }
+            .catalogFooter {
+                margin: 0 auto;
+                padding: 20px 0;
+                width: 960px;
+            }
+            .catalogFooterAdress {
+                background: #f6f6f6;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-    <style>
-        .catalogHeader {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            padding: 20px 0;
-            width: 960px;
-            background: #f6f6f6;
-            text-align: center;
-        }
 
-        .catalogHeaderTitle {
-            padding-left: 25px;
-            font-size: 36px;
-            text-transform: uppercase;
-            color: blue;
-        }
-        .catalogMain {
-            margin: 0 auto;
-            width: 960px;
-        }
-        .catalogTitle {
-            cursor: pointer;
-        }
-        .catalogContacts {
-            margin: 50px 0 0 25px;
-            padding: 25px 25px;
-            width: 500px;
-            border: 1px solid #ccc;
-            box-shadow: 1px 1px 5px #808080;
-        }
-        .catalogContactsTitle {
-            font-size: 32px;
-            font-weight: bolder;
-            margin-bottom: 10px;
-        }
-        .catalogContactsSubtitle {
-            font-size: 20px;
-        }
-        .catalogContactsItems {
-            list-style: none;
-        }
-        .catalogContactsLinks_mail,
-        .catalogContactsLinks_phone {
-            position: relative;
-            font-size: 18px;
-            line-height: 34px;
-            text-align: left;
-            text-decoration: none;
-        }
-        .catalogContactsLinks_mail:before {
-            position: absolute;
-            content: url("./images/mail_send_icon.png");
-            top: -3px;
-            left: -25px;
-        }
-        .catalogContactsLinks_phone:before {
-            position: absolute;
-            content: url("./images/phone.png");
-            top: -3px;
-            left: -25px;
-        }
-        .catalogPrices {
-            margin: 50px 0 25px 25px;
-        }
-        .catalogPricesTitle {
-            margin-bottom: 10px;
-            font-size: 24px;
-            color: black;
-        }
-        th {
-            text-align: center;
-        }
-        td {
-            text-align: right;
-        }
-        .catalogPricesBook {
-            text-align: left;
-        }
-        .catalogPricesLinks {
-            text-align: center;
-        }
-        .catalogFooter {
-            margin: 0 auto;
-            padding: 20px 0;
-            width: 960px;
-        }
-        .catalogFooterAdress {
-            background: #f6f6f6;
-            text-align: center;
-        }
-    </style>
         <header class="catalogHeader">
-            <img src="/images/book_logo.png" >
-            <h1 class="catalogHeaderTitle"><strong></strong>Книжный Интернет-магазин "Букашка"</strong></h1>
+            <img src="/images/book_logo.png" alt="book">
+            <h1 class="catalogHeaderTitle"><strong>Книжный Интернет-магазин "Букашка"</strong></h1>
         </header>
 
         <main class="catalogMain">
