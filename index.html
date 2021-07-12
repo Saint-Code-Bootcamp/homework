@@ -9,67 +9,32 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <h1 class="catalogTitle">Каталог книг</h1>
-        <ol class="catalogList">
-            <li class="catalogSubtitle"><a class="catalogLink" href="/book1.html">HTML и CSS. Разработка и создание веб-сайтов &raquo;</a></li>
-            <li class="catalogSubtitle"><a class="catalogLink" href="/book2.html">JavaScript и jQuery. Интерактивная веб-разработка &raquo;</a></li>
-            <li class="catalogSubtitle"><a class="catalogLink" href="/book3.html">Создание сайтов своими руками на BOOTSTRAP &raquo;</a></li>
-            <li class="catalogSubtitle"><a class="catalogLink" href="/book4.html">PHP и MySQL. Исчерпывающее руководство &raquo;</a></li>
-            <li class="catalogSubtitle"><a class="catalogLink" href="/book5.html">Изучаем React &raquo;</a></li>
-        </ol>
-        <div class="catalogPrices">
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Название книги</th>
-                        <th>Цена по акции</th>
-                        <th>Старая цена</th>
-                        <th>Узнать подробности</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="catalogPricesBook">HTML и CSS. Разработка и создание веб-сайтов</td>
-                        <td><mark style="background: aqua;">1 428 ₽</mark></td>
-                        <td><s>1 630 ₽</s></td>
-                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=9752230"><em>Подробнее &raquo;</em></a></td>
-                    </tr>
-                    <tr>
-                        <td class="catalogPricesBook">JavaScript и jQuery. Интерактивная веб-разработка</td>
-                        <td><mark style="background: aqua;">1 678 ₽</mark></td>
-                        <td><s>1 830 ₽</s></td>
-                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=7351276"><em>Подробнее &raquo;</em></a></td>
-                    </tr>
-                    <tr>
-                        <td class="catalogPricesBook">Создание сайтов своими руками на BOOTSTRAP</td>
-                        <td><mark style="background: aqua;">1 500 ₽</mark></td>
-                        <td><s>1 630 ₽</s></td>
-                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=7350352"><em>Подробнее &raquo;</em></a></td>
-                    </tr>
-                    <tr>
-                        <td class="catalogPricesBook">HP и MySQL. Исчерпывающее руководство</td>
-                        <td><mark style="background: aqua;">849 ₽</mark></td>
-                        <td><s>1 200 ₽</s></td>
-                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=6028341"><em>Подробнее &raquo;</em></a></td>
-                    </tr>
-                    <tr>
-                        <td class="catalogPricesBook">Изучаем React</td>
-                        <td><mark style="background: aqua;">1 053 ₽</mark></td>
-                        <td><s>1 330 ₽</s></td>
-                        <td class="catalogPricesLinks"> <a class="bookLink" href="https://www.bookvoed.ru/book?id=10051696"><em>Подробнее &raquo;</em></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="catalogContacts">
-            <h2 class="catalogContactsTitle">Контакты</h2>
-            <p class="catalogContactsSubtitle">Если у Вас есть вопросы, Вы можете с нами связаться:</p>
-            <ul class="catalogContactsItems">
-                <li><a class="catalogContactsLinks_mail" href="mailto:books@gmail.com">по электронной почте <span style="color: red;"><u>books@gmail.com</u></span></a></li>
-                <li><a class="catalogContactsLinks_phone" href="tel:+74952222223">по телефону <span style="color: red;"><u>7(495) 222-2223</u></span></a></li>
-            </ul>
-        </div>
     <style>
+        .catalogHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 20px 0;
+            width: 960px;
+            background: #f6f6f6;
+            text-align: center;
+        }
+
+        .catalogHeaderTitle {
+            padding-left: 25px;
+            font-size: 36px;
+            text-transform: uppercase;
+            color: blue;
+        }
+        .catalogMain {
+            margin: 0 auto;
+            width: 960px;
+        }
+        .catalogTitle {
+            cursor: pointer;
+        }
         .catalogContacts {
             margin: 50px 0 0 25px;
             padding: 25px 25px;
@@ -111,6 +76,11 @@
         .catalogPrices {
             margin: 50px 0 25px 25px;
         }
+        .catalogPricesTitle {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: black;
+        }
         th {
             text-align: center;
         }
@@ -123,6 +93,92 @@
         .catalogPricesLinks {
             text-align: center;
         }
+        .catalogFooter {
+            margin: 0 auto;
+            padding: 20px 0;
+            width: 960px;
+        }
+        .catalogFooterAdress {
+            background: #f6f6f6;
+            text-align: center;
+        }
     </style>
+        <header class="catalogHeader">
+            <img src="/images/book_logo.png" >
+            <h1 class="catalogHeaderTitle"><strong></strong>Книжный Интернет-магазин "Букашка"</strong></h1>
+        </header>
+
+        <main class="catalogMain">
+            <details>
+                <summary class="catalogTitle">Каталог книг</summary>
+                <ol class="catalogList">
+                    <li class="catalogSubtitle"><a class="catalogLink" href="/book1.html">HTML и CSS. Разработка и создание веб-сайтов &raquo;</a></li>
+                    <li class="catalogSubtitle"><a class="catalogLink" href="/book2.html">JavaScript и jQuery. Интерактивная веб-разработка &raquo;</a></li>
+                    <li class="catalogSubtitle"><a class="catalogLink" href="/book3.html">Создание сайтов своими руками на BOOTSTRAP &raquo;</a></li>
+                    <li class="catalogSubtitle"><a class="catalogLink" href="/book4.html">PHP и MySQL. Исчерпывающее руководство &raquo;</a></li>
+                    <li class="catalogSubtitle"><a class="catalogLink" href="/book5.html">Изучаем React &raquo;</a></li>
+                </ol>
+            </details>
+            <div class="catalogPrices">
+                <table border="1">
+                    <caption class="catalogPricesTitle"><u>Прайс лист</u></caption>
+                    <thead>
+                    <tr>
+                        <th>Название книги</th>
+                        <th>Цена по акции</th>
+                        <th>Старая цена</th>
+                        <th>Узнать подробности</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="catalogPricesBook">HTML и CSS. Разработка и создание веб-сайтов</td>
+                        <td><mark style="background: aqua;">1 428 ₽</mark></td>
+                        <td><s>1 630 ₽</s></td>
+                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=9752230"><em>Подробнее &raquo;</em></a></td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPricesBook">JavaScript и jQuery. Интерактивная веб-разработка</td>
+                        <td><mark style="background: aqua;">1 678 ₽</mark></td>
+                        <td><s>1 830 ₽</s></td>
+                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=7351276"><em>Подробнее &raquo;</em></a></td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPricesBook">Создание сайтов своими руками на BOOTSTRAP</td>
+                        <td><mark style="background: aqua;">1 500 ₽</mark></td>
+                        <td><s>1 630 ₽</s></td>
+                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=7350352"><em>Подробнее &raquo;</em></a></td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPricesBook">HP и MySQL. Исчерпывающее руководство</td>
+                        <td><mark style="background: aqua;">849 ₽</mark></td>
+                        <td><s>1 200 ₽</s></td>
+                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=6028341"><em>Подробнее &raquo;</em></a></td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPricesBook">Изучаем React</td>
+                        <td><mark style="background: aqua;">1 053 ₽</mark></td>
+                        <td><s>1 330 ₽</s></td>
+                        <td class="catalogPricesLinks"> <a class="bookLink" href="https://www.bookvoed.ru/book?id=10051696"><em>Подробнее &raquo;</em></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="catalogContacts">
+                <h2 class="catalogContactsTitle">Контакты</h2>
+                <p class="catalogContactsSubtitle">Если у Вас есть вопросы, Вы можете с нами связаться:</p>
+                <ul class="catalogContactsItems">
+                    <li><a class="catalogContactsLinks_mail" href="mailto:books@gmail.com">по электронной почте <span style="color: red;"><u>books@gmail.com</u></span></a></li>
+                    <li><a class="catalogContactsLinks_phone" href="tel:+74952222223">по телефону <span style="color: red;"><u>7(495) 222-2223</u></span></a></li>
+                </ul>
+            </div>
+        </main>
+        <footer class="catalogFooter">
+            <address class="catalogFooterAdress">
+                Наш адресс:<br>
+                <code>195197 г. Санкт-Петербург, Минеральная ул., д.13, литер А3</code><br>
+                Россия
+            </address>
+        </footer>
     </body>
 </html>
