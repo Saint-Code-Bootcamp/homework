@@ -17,5 +17,112 @@
             <li class="catalogSubtitle"><a class="catalogLink" href="/book4.html">PHP и MySQL. Исчерпывающее руководство &raquo;</a></li>
             <li class="catalogSubtitle"><a class="catalogLink" href="/book5.html">Изучаем React &raquo;</a></li>
         </ol>
+        <div class="catalogPrices">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Название книги</th>
+                        <th>Цена по акции</th>
+                        <th>Старая цена</th>
+                        <th>Узнать подробности</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="catalogPricesBook">HTML и CSS. Разработка и создание веб-сайтов</td>
+                        <td><mark>1 428 ₽</mark></td>
+                        <td><s>1 630 ₽</s></td>
+                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=9752230">Подробнее &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPricesBook">JavaScript и jQuery. Интерактивная веб-разработка</td>
+                        <td><mark>1 678 ₽</mark></td>
+                        <td><s>1 830 ₽</s></td>
+                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=7351276">Подробнее &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPricesBook">Создание сайтов своими руками на BOOTSTRAP</td>
+                        <td><mark>1 500 ₽</mark></td>
+                        <td><s>1 630 ₽</s></td>
+                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=7350352">Подробнее &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPricesBook">HP и MySQL. Исчерпывающее руководство</td>
+                        <td><mark>849 ₽</mark></td>
+                        <td><s>1 200 ₽</s></td>
+                        <td class="catalogPricesLinks"><a class="bookLink" href="https://www.bookvoed.ru/book?id=6028341">Подробнее &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPricesBook">Изучаем React</td>
+                        <td><mark>1 053 ₽</mark></td>
+                        <td><s>1 330 ₽</s></td>
+                        <td class="catalogPricesLinks"> <a class="bookLink" href="https://www.bookvoed.ru/book?id=10051696">Подробнее &raquo;</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="catalogContacts">
+            <h2 class="catalogContactsTitle">Контакты</h2>
+            <p class="catalogContactsSubtitle">Если у Вас есть вопросы, Вы можете с нами связаться:</p>
+            <ul class="catalogContactsItems">
+                <li><a class="catalogContactsLinks_mail" href="mailto:books@gmail.com">по электронной почте <span style="color: red;"><u>books@gmail.com</u></span></a></li>
+                <li><a class="catalogContactsLinks_phone" href="tel:+74952222223">по телефону <span style="color: red;"><u>7(495) 222-2223</u></span></a></li>
+            </ul>
+        </div>
+    <style>
+        .catalogContacts {
+            margin: 50px 0 0 25px;
+            padding: 25px 25px;
+            width: 500px;
+            border: 1px solid #ccc;
+            box-shadow: 1px 1px 5px #808080;
+        }
+        .catalogContactsTitle {
+            font-size: 32px;
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        .catalogContactsSubtitle {
+            font-size: 20px;
+        }
+        .catalogContactsItems {
+            list-style: none;
+        }
+        .catalogContactsLinks_mail,
+        .catalogContactsLinks_phone {
+            position: relative;
+            font-size: 18px;
+            line-height: 34px;
+            text-align: left;
+            text-decoration: none;
+        }
+        .catalogContactsLinks_mail:before {
+            position: absolute;
+            content: url("./images/mail_send_icon.png");
+            top: -3px;
+            left: -25px;
+        }
+        .catalogContactsLinks_phone:before {
+            position: absolute;
+            content: url("./images/phone.png");
+            top: -3px;
+            left: -25px;
+        }
+        .catalogPrices {
+            margin: 50px 0 25px 25px;
+        }
+        th {
+            text-align: center;
+        }
+        td {
+            text-align: right;
+        }
+        .catalogPricesBook {
+            text-align: left;
+        }
+        .catalogPricesLinks {
+            text-align: center;
+        }
+    </style>
     </body>
 </html>
