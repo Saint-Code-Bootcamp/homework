@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset=utf-8>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+</head>
+<body>
+<form>
+    <label>Name <input required type="text" name="Name" placeholder="enter you lastname"  /></label><br />
+    <label>Lastname <input required type="text" name="Lastname" placeholder="enter you name" /></label><br />
+    <p>Gender:</p>
+    <ul>
+        <li>
+            <label>male <input type="radio" name="gender" value="male" /></label>
+        </li>
+        <li>
+            <label>female <input type="radio" name="gender" value="female" /></label>
+        </li>
+    </ul>
+    <label>Date of Birth <input required type="date" name="born" /></label><br />
+    <label>Years old <input type="number" name="years" placeholder="How are you old" /></label><br />
+    <label>Phone number <input required type="tel" placeholder="enter you phone number" /></label><br />
+    <label>Email <input type="email" name="email" placeholder="enter you email" ></label><br />
+    <label>Password <input type="password" minlength="6" placeholder="create you pass" /></label><br />
+    <label for="hobby">Choose you hobby:</label>
+    <select id="hobby" name="hobby" >
+        <option value="music">music</option>
+        <option value="movies">movies</option>
+        <option value="cars">cars</option>
+        <option value="sport">sport</option>
+        <option value="animals">animals</option>
+        <option value="somebody else">somebody else</option>
+    </select>
+    <p>Social networks</p>
+    <table border="1">
+        <thead>
+        <tr><td>number</td>
+            <td>network name</td>
+            <td>url</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr> <td>1</td>
+            <td><input type="text" name="network name1" /></td>
+            <td><input type="url" name="url1" /></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text" name="network name2" /></td>
+            <td><input type="url" name="url2" /></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><input type="text" name="network name3" /></td>
+            <td><input type="url" name="url3" /></td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Education </p>
+    <ul>
+        <li>higher<input type="checkbox" name="higher" value="higher" /></li>
+        <li>average<input type="checkbox" name="average" value="average" /></li>
+        <li>no education<input type="checkbox" name="no education" value="no education" /></li>
+    </ul>
+    <table border="1">
+        <thead>
+        <tr>     <td>number</td>
+            <td>university name</td>
+            <td>specialty</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>        <td>1</td>
+            <td><input type="text" name="university name1" /></td>
+            <td><input type="text" name="specialty1" /></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text" name="university name2" /></td>
+            <td><input type="text" name="specialty2" /></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><input type="text" name="university name3" /></td>
+            <td><input type="text" name="specialty3" /></td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Work experience in pizza</p>
+    <ul>
+        <li>
+            <label>worked <input type="radio" name="work" value="worked" /></label>
+        </li>
+        <li>
+            <label>no worked <input type="radio" name="work" value="no worked " /></label>
+        </li>
+    </ul>
+    <p>How hours you can work?</p>
+    <input list="timework" />
+    <datalist id="timework">
+        <option value="6 hours"></option>
+        <option value="8 hours"></option>
+        <option value="10 hours"></option>
+    </datalist>
+    <br />
+    <br />
+    <p>Tell us what you think is important about yourself</p>
+    <textarea name="about" rows="20" cols="40" placeholder="something about you"></textarea>
+    <br />
+    <br />
+    <br />
+    <input type="submit" value="Input send" />
+
+    <p>Rate the form</p>
+    <input type="range" min="0" step="1" value="50" max="100" /><br />
+</form>
+</body>
+</html>
