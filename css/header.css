@@ -1,0 +1,34 @@
+.headerNavigation {
+    margin: 0 auto;
+    padding: 33px 0;
+    width: 1140px;
+    background: var(--primary-bcg-color);
+    border-bottom: 1px solid var(--secondary-text-color);
+}
+
+.headerNavigation_Menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerNavigation_Items {
+    list-style: none;
+}
+
+.headerNavigation_Links {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    transition: 0.3s;
+
+}
+
+.headerNavigation_Links:hover {
+    color: var(--primary-text-color);
+    transition: 0.3s;
+}
