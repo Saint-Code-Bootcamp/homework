@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<title>Playground</title>
+<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <form action="">
+    <label>Username: <input type="text" name="username" /></label><br />
+
+    <p>Gender:</p>
+    <label for="male">Male!!</label>
+    <ul>
+        <li>
+            <label>male <input id="male" type="radio" name="gender" value="male" /></label>
+        </li>
+        <li>
+            <label>female <input type="radio" name="gender" value="female" /></label>
+        </li>
+    </ul>
+    <br />
+    <br />
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+
+    <br />
+    <br />
+    <textarea name="message" rows="3" cols="30">The cat was playing in the garden</textarea>
+    <textarea name="message" style="width: 300px; height: 200px">
+The cat was playing in the garden</textarea
+    >
+
+    <p>Hobbies:</p>
+    <ul>
+        <li>music <input type="checkbox" name="music" value="music" /></li>
+        <li>movies <input type="checkbox" name="movies" value="movies" /></li>
+        <li>web development <input type="checkbox" name="webdev" value="webdev" /></li>
+        <li>sport <input type="checkbox" name="sport" value="sport" /></li>
+    </ul>
+
+    <input list="time" />
+    <datalist id="time">
+        <option value="16:00"></option>
+        <option value="20:00"></option>
+    </datalist>
+
+    <br />
+
+    <fieldset>
+        <legend>Input Types</legend>
+        text: <input type="text" value="Yury" pattern="[A-Za-z]{3}" autofocus /><br />
+        password: <input id="psw" type="password" minlength="6" maxlength="8" /><br />
+        email: <input type="email" value="ym@ymatuhin.ru" disabled /><br />
+        number: <input type="number" min="1" step="3" max="10" /><br />
+        search: <input type="search" /><br />
+        tel: <input type="tel" placeholder="Phone number" /><br />
+        url: <input type="url" /><br />
+        button: <input type="button" value="submit" /><br />
+        submit: <input type="submit" value="submit" /><br />
+        checkbox: <input type="checkbox" /><br />
+        radio: <input type="radio" /><br />
+        color: <input type="color" /><br />
+        reset: <input type="reset" /><br />
+        month: <input type="month" /><br />
+        date: <input type="date" /><br />
+        week: <input type="week" /><br />
+        time: <input type="time" /><br />
+        datetime-local: <input type="datetime-local" /><br />
+        file: <input type="file" /><br />
+        hidden: <input type="hidden" name="hidden-name" value="hidden-value" /><br />
+        range: <input type="range" min="0" step="10" value="30" max="100" /><br />
+    </fieldset>
+    ​
+    <br />
+    ​
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    ​
+    <button>Button send</button>
+    <input type="submit" value="Input send" />
+</form>
