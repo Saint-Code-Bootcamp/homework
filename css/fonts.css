@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Gilroy-medium', sans-serif;
+    src: url("/fonts/gilroy-medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-bold', sans-serif;
+    src: url("/fonts/gilroy-bold.ttf") format('truetype');
+}
+
