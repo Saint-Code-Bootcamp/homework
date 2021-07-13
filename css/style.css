@@ -1,0 +1,29 @@
+@import "header.css";
+@import "fonts.css";
+@import 'home.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    background: var(--primary-bcg-color);
+}
+
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*css vars*/
+
+:root {
+    --primary-bcg-color: #fff;
+    --secondary-bcg-color: #F6F6F6;
+
+    --primary-text-color: #070707;
+    --secondary-text-color: #828282;
+
+    --primary-font: 'Gilroy-medium', sans-serif;
+    --secondary-font: 'Gilroy-bold'', sans-serif;
+
+}
