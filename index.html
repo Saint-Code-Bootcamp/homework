@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Заголовок</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <fieldset>
+      <legend><mark>Пицца - Нельзя не соблазниться</mark></legend>
+      <form action="#" method="post">
+        <h1>
+          <big><center>Форма заявки на работу</center></big>
+        </h1>
+        <p>
+          Выбери вакансию
+          <label for="job"><input id="job" list="emp" /></label>
+          <datalist id="emp">
+            <option value="официант"></option>
+            <option value="курьер"></option>
+            <option value="пиццайло"></option>
+            <option value="тестировщик"></option>
+            <option value="администратор"></option>
+            <option value="бармен"></option>
+          </datalist>
+        </p>
+        Пол:
+        <ul>
+          <li>
+            <label
+              >male <input id="male" type="radio" name="gender" value="male"
+            /></label>
+          </li>
+          <li>
+            <label
+              >female <input type="radio" name="gender" value="female"
+            /></label>
+          </li>
+        </ul>
+        <label for="educ">Образование</label>
+        <select id="educ">
+          <option selected>-</option>
+          <option value="Высшее">Высшее</option>
+          <option value="Среднее">Среднее</option>
+          <option value="Неполное высшее">Неполное высшее</option>
+        </select>
+        <p>
+          <label>Фамилия <input type="text" /></label>
+        </p>
+        <p>
+          <label>Имя <input type="text" /></label>
+        </p>
+        <p>
+          <label>Отчество <input type="text" /></label>
+        </p>
+        <p>Дата рождения <input type="date" /></p>
+        <p>tel number <input type="tel" placeholder="+7**********" /></p>
+        <p>email <input type="email" /></p>
+        <p>facebook <input type="url" /></p>
+        <textarea name="message" style="width: 300px; height: 200px">
+          Напиши о себе</textarea
+        ><br />
+        <button>отправить</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
