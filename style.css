@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #efe8e8;
+    font-family: "Arial Narrow", sans-serif;
+}
+
+.application-field {
+    margin: 0 auto;
+    padding: 0;
+    width: 650px;
+    height: 750px;
+}
+
+.application-name {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 36px;
+}
+
+.application-form_title {
+    margin: 25px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.application-form_subtitle {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.application-form_data {
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    width: 170px;
+}
+
+.data_select {
+    width: 254px;
+}
