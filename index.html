@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset class="application-field">
+        <legend class="application-name">Пиццерия DoDo</legend>
+        <form class="application-form" action="#" methos="post">
+            <h1 class="application-form_title">форма заявки для приема на работу</h1>
+            <label class="application-form_subtitle" for="name">Ваше имя</label>
+            <input class="application-form_data" id="name" type="text" autocomplete="off" placeholder="Имя" required>
+            <label class="application-form_subtitle" for="surname">Ваша фамилия</label>
+            <input class="application-form_data" id="surname" type="text" autocomplete="off" placeholder="Фамилия" required>
+            <label class="application-form_subtitle" for="birthday">Дата рождения</label>
+            <input class="application-form_data" id="birthday" type="date" required>
+            <label class="application-form_subtitle" for="job">Выбирите интерисующую вакансию</label>
+            <select id="job" class="application-form_data data_select" required>
+                <option>Официант</option>
+                <option>Повар</option>
+                <option>Менеджер зала</option>
+                <option>Охоанник</option>
+            </select>
+            <label class="application-form_subtitle" for="phone">Введите номер телефона</label>
+            <input class="application-form_data" id="phone" type="tel" required placeholder="+7(___) ___-__-__">
+            <label class="application-form_subtitle" for="email">Введите адрес электронной почты</label>
+            <input class="application-form_data" id="email" type="email" required placeholder="example@gmail.com">
+            <input class="application-form_data" type="submit" required value="Подать заявкку">
+        </form>
+    </fieldset>
+</body>
+</html>
