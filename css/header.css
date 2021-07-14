@@ -6,6 +6,10 @@
     border-bottom: 1px solid var(--secondary-text-color);
 }
 
+.headerNavigation_hidden {
+    display: none;
+}
+
 .headerNavigation_Menu {
     display: flex;
     flex-direction: row;
@@ -31,4 +35,117 @@
 .headerNavigation_Links:hover {
     color: var(--primary-text-color);
     transition: 0.3s;
+}
+
+.headerNavigation_button {
+    position: relative;
+    visibility: hidden;
+    width: 33px;
+    height: 12px;
+    /*border-top: 4px solid #000;*/
+    /*border-bottom:  4px solid #000;*/
+}
+
+.headerNavigation_button span,
+.headerNavigation_button span::before,
+.headerNavigation_button span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -16px;
+    width: 32px;
+    height: 4px;
+    background: #000;
+}
+
+.headerNavigation_button span::before {
+    content: '';
+    display: block;
+    top: -10px;
+}
+
+.headerNavigation_button span::after {
+    content: '';
+    display: block;
+    top: 10px;
+}
+
+/*.headerNavigation_button:before {*/
+/*    position: absolute;*/
+/*    content: ' ';*/
+/*    top: calc(50% - 2px);*/
+/*    width: 33px;*/
+/*    height: 4px;*/
+/*    background: #000;*/
+/*}*/
+
+/*Начало блока медиазапросов*/
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+
+    .headerNavigation {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .headerNavigation {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    .headerNavigation {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 575px) {
+
+    .headerNavigation {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+
+    .headerNavigation {
+        padding: 0;
+        width: 100%;
+        border: 0;
+    }
+
+    .headerNavigation_Menu {
+        display: none;
+    }
+
+    .headerNavigation_button {
+        visibility: visible;
+        left: 312px;
+        top: 101px;
+        cursor: pointer;
+    }
+
+    .headerNavigation_hidden {
+        padding: 66px 28px 57px 26px;
+        display: none;
+    }
+
+    .headerNavigation_Items {
+       margin-bottom: 68px;
+    }
+
+    .headerNavigation_Links {
+        font-family:  var(--secondary-font);
+        font-size: 34px;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .headerNavigation_Links {
+        color: var(--hidden-nav-text-color);
+    }
 }

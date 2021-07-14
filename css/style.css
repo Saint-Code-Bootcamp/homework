@@ -22,6 +22,7 @@ h1, h2, h3, p, ul, li {
 
     --primary-text-color: #070707;
     --secondary-text-color: #828282;
+    --hidden-nav-text-color: #090909;
 
     --primary-font: 'Gilroy-medium', sans-serif;
     --secondary-font: 'Gilroy-bold'', sans-serif;
