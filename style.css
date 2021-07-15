@@ -30,8 +30,8 @@ h1, h2, h3, ul, li {
 }
 
 .blocks-basics_header,
-blocks-pro_header,
-blocks-premium_header {
+.blocks-pro_header,
+.blocks-premium_header {
     height: 60px;
 }
 
@@ -68,12 +68,18 @@ blocks-premium_header {
 
 .blocks-items {
     font-size: 16px;
+    color: #000;
     border-bottom: 1px solid #dccece;
 }
 
+.blocks-btn {
+    padding: 15px 0;
+    height: 70px;
+    background: #f1eaea;
+}
 .blocks-button {
     display: block;
-    margin: 15px auto;
+    margin: 0 auto;
     padding: 10px 110px;
     outline: none;
     border: 0;
