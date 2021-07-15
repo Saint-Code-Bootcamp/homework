@@ -1,15 +1,143 @@
 #home {
-    display: none;
     margin: 0 auto;
     padding: 40px 0 104px 0;
-    width: 1140px;
+    width: 960px;
+    /*display: none;*/
 }
 
-.home_Title {
-    font-family: Gilroy-Bold;
+.home-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.home-title {
+    width: 124px;
+    height: 118px;
+}
+
+.home-title_name {
+    font-family: var(--secondary-font);
     font-size: 47px;
     line-height: 59px;
-    letter-spacing: 0em;
     text-align: left;
     color: var(--primary-text-color);
+}
+
+.home-subtitle {
+    width: 156px;
+    height: 44px;
+}
+
+.home-subtitle_desc {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.home-lang_RU,
+.home-lang_ENG {
+    margin-bottom: 26px;
+    font-size: 14px;
+    transform: rotate(-90deg);
+}
+
+.home-lang_ENG {
+    font-weight: bold;
+}
+
+.home-img {
+    margin: 30px auto 0;
+    width: 100%;
+    height: auto;
+}
+
+.home-img img {
+    width: 960px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+    #home {
+        width: 720px;
+    }
+
+    .home-img img {
+        width: 720px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #home {
+        width: 720px;
+    }
+
+    .home-img img {
+        width: 720px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    #home {
+        width: 540px;
+    }
+
+    .home-img img {
+        width: 540px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 575px) {
+    #home {
+        width: 400px;
+    }
+
+    .home-img img {
+        width: 400px;
+        object-fit: cover;
+    }
+    
+    .home-subtitle {
+        height: 52px;
+    }
+    
+    .home-lang {
+        height: 52px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #home {
+        width: 320px;
+        padding-top: 0px;
+    }
+
+    .home-description {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-lang {
+        display: none;
+    }
+
+    .home-img img {
+        width: 320px;
+        object-fit: cover;
+       background-image: url('/images/G');
+    }
+
+    .home-subtitle {
+        height: 52px;
+    }
+
+    .home-lang {
+        height: 52px;
+    }
 }

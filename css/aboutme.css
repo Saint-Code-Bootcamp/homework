@@ -1,0 +1,33 @@
+#aboutMe {
+    background: #F6F6F6;
+    display: none;
+}
+
+.aboutMe-desc {
+    margin: 0 auto;
+    padding: 120px 0 64px 0;
+    width: 960px;
+}
+
+.aboutMe-title {
+    margin-bottom: 18px;
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.aboutMe-message {
+    margin: 0 auto;
+    width: 485px;
+}
+
+.aboutMe-notice {
+    margin-bottom: 43px;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--primary-text-color);
+}

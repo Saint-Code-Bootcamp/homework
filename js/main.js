@@ -1,15 +1,13 @@
 'use strict'
+let menuBtn = document.querySelector('.headerNavigation_button');
+let menu = document.querySelector('.headerNavigation_Menu');
 
-let btn = document.querySelector('.headerNavigation_button');
-let mobileMenu = document.querySelector('.headerNavigation_hidden');
-
-function changeIcon() {
-    btn.classList.toggle('active');
+let hideMenu = () => {
+    menuBtn.classList.toggle('headerNavigation_button_active');
+    menu.classList.toggle('headerNavigation_hidden');
 }
 
-function showMobileMenu() {
-    mobileMenu.style = 'display: block';
-}
+menuBtn.addEventListener('click', hideMenu);
 
-btn.addEventListener("click", changeIcon);
-btn.addEventListener("click", showMobileMenu);
+
+

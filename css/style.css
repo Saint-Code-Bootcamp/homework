@@ -1,6 +1,7 @@
 @import "header.css";
 @import "fonts.css";
 @import 'home.css';
+@import 'aboutme.css';
 
 body {
     margin: 0;
