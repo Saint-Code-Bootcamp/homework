@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  line-height: 36px;
+  border-bottom: solid azure 1px;
+}
+p {
+  margin: 0;
+}
+.body {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: azure;
+}
+.box {
+  margin: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.plan-box {
+  text-align: center;
+  background-color: blueviolet;
+  margin: 20px;
+  width: 350px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.planR {
+  margin: 0;
+  padding: 10px;
+  background-color: lightsalmon;
+  height: 50px;
+  border-radius: 4px;
+}
+.planW {
+  margin: 0;
+  padding: 10px;
+  color: blueviolet;
+  background-color: white;
+  height: 50px;
+  border-radius: 4px;
+}
+.planG {
+  margin: 0;
+  padding: 11px;
+  background-color: darkolivegreen;
+  height: 52px;
+  border-radius: 4px;
+}
+
+.butonR {
+  margin: 5px;
+  color: azure;
+  font-size: medium;
+  width: 97%;
+  border-radius: 6px;
+  background-color: coral;
+}
+.butonW {
+  margin: 5px;
+  color: darkmagenta;
+  font-size: medium;
+  width: 97%;
+  border-radius: 6px;
+  background-color: azure;
+}
+
+.butonG {
+  margin: 5px;
+  color: azure;
+  font-size: medium;
+  width: 97%;
+  border-radius: 7px;
+  background-color: olivedrab;
+}
+.priceBAS {
+  font-size: 33px;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: mediumpurple;
+}
+.pricePRO {
+  font-size: 33px;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: mediumpurple;
+}
+.pricePRE {
+  font-size: 33px;
+  font-weight: bolder;
+  padding: 10px;
+  background-color: mediumpurple;
+}
