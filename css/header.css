@@ -85,31 +85,34 @@
 
 /*Начало блока медиазапросов*/
 
-/*@media screen and (min-width: 1024px) and (max-width: 1920px) {*/
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+    .headerNavigation {
+        width: 100%;
+        padding: 33px 10px;
+    }
+}
 
-/*    .headerNavigation {*/
-/*        width: 960px;*/
-/*    }*/
-/*}*/
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
     .headerNavigation {
-        width: 720px;
+        width: 100%;
+        padding: 33px 10px;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
 
     .headerNavigation {
-        width: 540px;
+        width: 100%;
+        padding: 33px 10px;
     }
 }
 
 @media screen and (min-width: 425px) and (max-width: 575px) {
 
     .headerNavigation {
-        width: 400px;
+        padding: 33px 10px;
+        width: 100%;
     }
 }
 
