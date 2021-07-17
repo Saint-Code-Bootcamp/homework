@@ -89,7 +89,12 @@
 @media screen and (min-width: 992px) and (max-width: 1023px) {
     .headerNavigation {
         width: 100%;
+    }
+
+    .headerNavigation_Menu {
+        width: 100%;
         padding: 33px 10px;
+        border: none;
     }
 }
 
@@ -97,7 +102,12 @@
 
     .headerNavigation {
         width: 100%;
+    }
+
+    .headerNavigation_Menu {
+        width: 100%;
         padding: 33px 10px;
+        border: none;
     }
 }
 
@@ -105,15 +115,25 @@
 
     .headerNavigation {
         width: 100%;
+    }
+
+    .headerNavigation_Menu {
+        width: 100%;
         padding: 33px 10px;
+        border: none;
     }
 }
 
 @media screen and (min-width: 425px) and (max-width: 575px) {
 
     .headerNavigation {
-        padding: 33px 10px;
         width: 100%;
+    }
+
+    .headerNavigation_Menu {
+        width: 100%;
+        padding: 33px 10px;
+        border: none;
     }
 }
 
@@ -156,6 +176,7 @@
         transition: 0.5s all;
         background: #fff;
         z-index: 100;
+        border: 0;
     }
 
     .headerNavigation_Items {
@@ -215,6 +236,7 @@
         transition: 0.5s all;
         background: #fff;
         z-index: 100;
+        border: 0;
     }
 
     .headerNavigation_Items {
