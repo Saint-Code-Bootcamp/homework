@@ -1,11 +1,7 @@
 .headerNavigation {
     position: sticky;
     top: 0;
-    margin: 0 auto;
-    padding: 33px 0;
-    width: 940px;
     background: var(--primary-bcg-color);
-    border-bottom: 1px solid var(--secondary-text-color);
     z-index: 105;
 }
 
