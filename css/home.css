@@ -66,44 +66,64 @@
 
 @media screen and (min-width: 992px) and (max-width: 1023px) {
     #home {
-        width: 720px;
+        padding: 40px 10px 104px 10px;
+        width: 100%;
+    }
+
+    .home-img {
+        margin: 33px auto 0;
     }
 
     .home-desktop {
-        width: 720px;
+        width: 100%;
         object-fit: cover;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #home {
-        width: 720px;
+        padding: 40px 10px 104px 10px;
+        width: 100%;
+    }
+
+    .home-img {
+        margin: 33px auto 0;
     }
 
     .home-desktop {
-        width: 720px;
+        width: 100%;
         object-fit: cover;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
     #home {
-        width: 540px;
+        padding: 40px 10px 104px 10px;
+        width: 100%;
+    }
+
+    .home-img {
+        margin: 33px auto 0;
     }
 
     .home-desktop {
-        width: 540px;
+        width: 100%;
         object-fit: cover;
     }
 }
 
 @media screen and (min-width: 425px) and (max-width: 575px) {
     #home {
-        width: 400px;
+        padding: 40px 10px 83px 10px;
+        width: 100%;
+    }
+
+    .home-img {
+        margin: 37px auto 0;
     }
 
     .home-desktop {
-        width: 400px;
+        width: 100%;
         object-fit: cover;
     }
     
