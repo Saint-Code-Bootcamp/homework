@@ -65,6 +65,7 @@
 
     .aboutMe-message {
         width: fit-content;
+        width: -moz-fit-content;
     }
 }
 
