@@ -41,9 +41,9 @@
 
 .home-lang_RU,
 .home-lang_ENG {
-    margin-bottom: 26px;
     font-size: 14px;
-    transform: rotate(-90deg);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
 
 .home-lang_ENG {
@@ -132,7 +132,7 @@
     }
     
     .home-lang {
-        height: 52px;
+        height: 72px;
     }
 }
 
