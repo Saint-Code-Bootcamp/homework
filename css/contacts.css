@@ -37,6 +37,11 @@
     transition: 0.3s;
 }
 
+.contacts-email {
+    text-decoration: none;
+    color: var(--primary-bcg-color);
+}
+
 .contacts-btn:hover {
     transform: translate(1px);
     transition: 0.3s;
