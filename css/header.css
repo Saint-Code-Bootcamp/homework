@@ -43,7 +43,7 @@
 .headerNavigation_button {
     position: relative;
     display: none;
-    /*background: var(--secondary-text-color);*/
+    background: var(--primary-bcg-color);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -161,7 +161,7 @@
     .headerNavigation_button {
         position: fixed;
         display: inline-block;
-        left: 296px;
+        left: 288px;
         top: 66px;
         cursor: pointer;
         z-index: 105;
