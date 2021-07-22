@@ -1,10 +1,19 @@
 @font-face {
     font-family: 'Gilroy-medium', sans-serif;
-    src: url("/fonts/gilroy-medium.ttf") format('truetype');
+    src: url("/fonts/gilroy-medium-webfont.woff") format('woff'),
+         url("/fonts/gilroy-medium-webfont.woff2") format('woff2'),
+         url("/fonts/gilroy-medium.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilroy-bold', sans-serif;
-    src: url("/fonts/gilroy-bold.ttf") format('truetype');
+    src: url("/fonts/gilroy-bold-webfont.woff") format('woff'),
+         url("/fonts/gilroy-bold-webfont.woff2") format('woff2'),
+         url("/fonts/gilroy-bold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
-
