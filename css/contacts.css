@@ -48,26 +48,26 @@
     transition: 0.3s;
 }
 
-.contacts-btn:before,
-.contacts-btn:after {
-    display: block;
-    position: absolute;
-    content: '';
-    width: 44px;
-    height: 44px;
-    top: 0;
-    background: var(--primary-text-color);
-    border: 1px solid var(--primary-text-color);
-    border-radius: 50%;
-}
+/*.contacts-btn:before,*/
+/*.contacts-btn:after {*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    width: 44px;*/
+/*    height: 44px;*/
+/*    top: 0;*/
+/*    background: var(--primary-text-color);*/
+/*    border: 1px solid var(--primary-text-color);*/
+/*    border-radius: 50%;*/
+/*}*/
 
-.contacts-btn:before {
-    left: -21px;
-}
+/*.contacts-btn:before {*/
+/*    left: -21px;*/
+/*}*/
 
-.contacts-btn:after {
-    right: -21px;
-}
+/*.contacts-btn:after {*/
+/*    right: -21px;*/
+/*}*/
 
 
 
