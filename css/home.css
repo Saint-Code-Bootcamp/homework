@@ -1,220 +1,221 @@
 #home {
-    margin: 0 auto;
-    padding: 40px 0 104px 0;
-    width: 940px;
-    /*display: none;*/
+  margin: 0 auto;
+  padding: 40px 0 104px 0;
+  width: 940px;
+  /*display: none;*/
 }
 
 .home-description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: nowrap;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
 }
 
 .home-title {
-    width: 124px;
-    height: 118px;
+  width: 124px;
+  height: 118px;
 }
 
 .home-title_name {
-    font-family: var(--secondary-font);
-    font-size: 47px;
-    line-height: 59px;
-    text-align: left;
-    color: var(--primary-text-color);
+  font-family: var(--secondary-font);
+  font-size: 47px;
+  line-height: 59px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 
 .home-subtitle {
-    width: 156px;
-    height: 44px;
+  width: 156px;
+  height: 44px;
 }
 
 .home-subtitle_desc {
-    font-family: var(--primary-font);
-    font-size: 18px;
-    line-height: 22px;
-    text-align: left;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
 }
 
 .home-lang_RU,
 .home-lang_ENG {
-    font-size: 14px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 
 .home-lang_ENG {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .home-img {
-    margin: 30px auto;
-    width: 100%;
-    height: auto;
+  margin: 30px auto;
+  width: 100%;
+  height: auto;
 }
 
 .home-desktop {
-    width: 940px;
+  width: 940px;
 }
 
 .home-mobile {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1023px) {
-    #home {
-        padding: 40px 10px 104px 10px;
-        width: 100%;
-    }
+  #home {
+    padding: 40px 10px 104px 10px;
+    width: 100%;
+  }
 
-    .home-img {
-        margin: 33px auto 0;
-    }
+  .home-img {
+    margin: 33px auto 0;
+  }
 
-    .home-desktop {
-        width: 100%;
-        object-fit: cover;
-    }
+  .home-desktop {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    #home {
-        padding: 40px 10px 104px 10px;
-        width: 100%;
-    }
+  #home {
+    padding: 40px 10px 104px 10px;
+    width: 100%;
+  }
 
-    .home-img {
-        margin: 33px auto 0;
-    }
+  .home-img {
+    margin: 33px auto 0;
+  }
 
-    .home-desktop {
-        width: 100%;
-        object-fit: cover;
-    }
+  .home-desktop {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    #home {
-        padding: 40px 10px 104px 10px;
-        width: 100%;
-    }
+  #home {
+    padding: 40px 10px 104px 10px;
+    width: 100%;
+  }
 
-    .home-img {
-        margin: 33px auto 0;
-    }
+  .home-img {
+    margin: 33px auto 0;
+  }
 
-    .home-desktop {
-        width: 100%;
-        object-fit: cover;
-    }
+  .home-desktop {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 425px) and (max-width: 575px) {
-    #home {
-        padding: 40px 10px 83px 10px;
-        width: 100%;
-    }
+  #home {
+    padding: 40px 10px 83px 10px;
+    width: 100%;
+  }
 
-    .home-img {
-        margin: 37px auto 0;
-    }
+  .home-img {
+    margin: 37px auto 0;
+  }
 
-    .home-desktop {
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    .home-subtitle {
-        height: 52px;
-    }
-    
-    .home-lang {
-        height: 72px;
-    }
+  .home-desktop {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .home-subtitle {
+    height: 52px;
+  }
+
+  .home-lang {
+    height: 72px;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
-    #home {
-        width: 320px;
-        padding: 66px 0 83px 0;
-    }
+  #home {
+    width: 320px;
+    padding: 66px 0 83px 0;
+  }
 
-    .home-description {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .home-description {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .home-title {
-        margin-bottom: 23px;
-    }
+  .home-title {
+    margin-bottom: 23px;
+  }
 
-    .home-lang {
-        display: none;
-    }
+  .home-lang {
+    display: none;
+  }
 
-    .home-img {
-        margin: 37px auto 0;
-    }
+  .home-img {
+    margin: 37px auto 0;
+  }
 
-    .home-desktop {
-        display: none;
-    }
+  .home-desktop {
+    display: none;
+  }
 
-    .home-mobile {
-        display: block;
-        width: 320px;
-        object-fit: cover;
-    }
-    .home-subtitle {
-        height: 52px;
-    }
+  .home-mobile {
+    display: block;
+    width: 320px;
+    object-fit: cover;
+  }
+  .home-subtitle {
+    height: 52px;
+  }
 
-    .home-lang {
-        height: 52px;
-    }
+  .home-lang {
+    height: 52px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
-    #home {
-        width: 280px;
-        padding: 66px 0 83px 0;
-    }
+  #home {
+    width: 280px;
+    padding: 66px 0 83px 0;
+  }
 
-    .home-description {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .home-description {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .home-title {
-        margin-bottom: 23px;
-    }
+  .home-title {
+    margin-bottom: 23px;
+  }
 
-    .home-lang {
-        display: none;
-    }
+  .home-lang {
+    display: none;
+  }
 
-    .home-img {
-        margin: 37px auto 0;
-    }
+  .home-img {
+    margin: 37px auto 0;
+  }
 
-    .home-desktop {
-        display: none;
-    }
+  .home-desktop {
+    display: none;
+  }
 
-    .home-mobile {
-        display: inline-block;
-        width: 100%;
-        object-fit: cover;
-    }
+  .home-mobile {
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+  }
 
-    .home-subtitle {
-        height: 52px;
-    }
+  .home-subtitle {
+    height: 52px;
+  }
 
-    .home-lang {
-        height: 52px;
-    }
+  .home-lang {
+    height: 52px;
+  }
 }
