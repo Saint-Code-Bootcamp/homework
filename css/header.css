@@ -1,0 +1,254 @@
+.headerNavigation {
+  position: sticky;
+  top: 0;
+  background: var(--primary-bcg-color);
+  z-index: 105;
+}
+
+.headerNavigation_Menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 33px 0;
+  max-width: 940px;
+  border-bottom: 1px solid var(--secondary-text-color);
+}
+
+.headerNavigation_hidden {
+  display: none;
+}
+
+.headerNavigation_Items {
+  list-style: none;
+}
+
+.headerNavigation_Links {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  transition: 0.3s;
+}
+
+.headerNavigation_Links:hover {
+  color: var(--primary-text-color);
+  transition: 0.3s;
+}
+
+.headerNavigation_button {
+  position: relative;
+  display: none;
+  background: var(--primary-bcg-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 105;
+}
+
+.headerNavigation_Line,
+.headerNavigation_Line::before,
+.headerNavigation_Line::after {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: 0px;
+  margin-left: -16px;
+  width: 32px;
+  height: 4px;
+  background: #000;
+}
+
+.headerNavigation_Line::before,
+.headerNavigation_Line::after {
+  content: "";
+  display: block;
+  transition: 0.2s;
+}
+
+.headerNavigation_Line::before {
+  transform: translateY(-10px);
+}
+.headerNavigation_Line::after {
+  transform: translateY(8px);
+}
+
+.headerNavigation_button_active .headerNavigation_Line {
+  background-color: transparent;
+}
+.headerNavigation_button_active .headerNavigation_Line::before {
+  transform: rotate(-45deg);
+}
+.headerNavigation_button_active .headerNavigation_Line::after {
+  transform: rotate(225deg);
+}
+
+/*Начало блока медиазапросов*/
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+  .headerNavigation_Menu {
+    padding: 33px 3px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .headerNavigation_Menu {
+    padding: 33px 29px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .headerNavigation_Menu {
+    padding: 33px 20px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 575px) {
+  .headerNavigation_Menu {
+    padding: 33px 29px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .scrollOff {
+    overflow: hidden;
+  }
+
+  .headerNavigation {
+    padding: 0;
+    width: 100%;
+    height: 0;
+    border: 0;
+  }
+
+  .headerNavigation_Menu {
+    display: none;
+  }
+
+  .headerNavigation_button {
+    position: fixed;
+    display: inline-block;
+    right: 30px;
+    top: 68px;
+    cursor: pointer;
+    z-index: 105;
+  }
+
+  .headerNavigation_button_active {
+    position: fixed;
+    margin: 0;
+    top: 66px;
+    z-index: 106;
+  }
+
+  .headerNavigation_hidden {
+    display: block;
+    position: fixed;
+    padding: 66px 26px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    transition: 0.5s all;
+    background: #fff;
+    z-index: 100;
+    border: 0;
+  }
+
+  .active {
+    top: 0;
+    transition: 0.5s all;
+  }
+
+  .headerNavigation_Items {
+    margin-bottom: 68px;
+  }
+
+  .headerNavigation_Links {
+    font-family: var(--secondary-font);
+    font-size: 34px;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  .headerNavigation_Links:hover {
+    color: var(--hidden-nav-text-color);
+  }
+}
+
+@media (max-width: 374px) {
+  .scrollOff {
+    overflow: hidden;
+  }
+
+  .headerNavigation {
+    padding: 0;
+    width: 100%;
+    height: 0;
+    border: 0;
+  }
+
+  .headerNavigation_Menu {
+    display: none;
+  }
+
+  .home-description {
+    padding-left: 14px;
+  }
+
+  .headerNavigation_button {
+    position: fixed;
+    display: block;
+    right: 30px;
+    top: 68px;
+    cursor: pointer;
+    z-index: 105;
+  }
+
+  .headerNavigation_button_active {
+    position: fixed;
+    margin: 0;
+    top: 68px;
+    z-index: 106;
+  }
+
+  .headerNavigation_hidden {
+    position: fixed;
+    padding: 68px 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: -110%;
+    transition: 0.5s all;
+    background: #fff;
+    z-index: 100;
+    border: 0;
+  }
+
+  .active {
+    top: 0;
+    transition: 0.5s all;
+  }
+
+  .headerNavigation_Items {
+    margin-bottom: 68px;
+  }
+
+  .headerNavigation_Links {
+    font-family: var(--secondary-font);
+    font-size: 34px;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  .headerNavigation_Links:hover {
+    color: var(--hidden-nav-text-color);
+  }
+}
