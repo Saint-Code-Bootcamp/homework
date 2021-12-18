@@ -11,7 +11,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 33px 0;
-  width: 940px;
+  max-width: 940px;
   border-bottom: 1px solid var(--secondary-text-color);
 }
 
@@ -89,49 +89,29 @@
 /*Начало блока медиазапросов*/
 
 @media screen and (min-width: 992px) and (max-width: 1023px) {
-  .headerNavigation {
-    width: 100%;
-  }
-
   .headerNavigation_Menu {
-    width: 100%;
-    padding: 33px 10px;
+    padding: 33px 3px;
     border: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .headerNavigation {
-    width: 100%;
-  }
-
   .headerNavigation_Menu {
-    width: 100%;
-    padding: 33px 10px;
+    padding: 33px 29px;
     border: none;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .headerNavigation {
-    width: 100%;
-  }
-
   .headerNavigation_Menu {
-    width: 100%;
-    padding: 33px 10px;
+    padding: 33px 20px;
     border: none;
   }
 }
 
 @media screen and (min-width: 425px) and (max-width: 575px) {
-  .headerNavigation {
-    width: 100%;
-  }
-
   .headerNavigation_Menu {
-    width: 100%;
-    padding: 33px 10px;
+    padding: 33px 29px;
     border: none;
   }
 }
@@ -155,8 +135,8 @@
   .headerNavigation_button {
     position: fixed;
     display: inline-block;
-    left: 288px;
-    top: 66px;
+    right: 30px;
+    top: 68px;
     cursor: pointer;
     z-index: 105;
   }
@@ -203,7 +183,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media (max-width: 374px) {
   .scrollOff {
     overflow: hidden;
   }
@@ -225,8 +205,8 @@
 
   .headerNavigation_button {
     position: fixed;
-    display: inline-block;
-    left: 240px;
+    display: block;
+    right: 30px;
     top: 68px;
     cursor: pointer;
     z-index: 105;

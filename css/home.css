@@ -1,8 +1,7 @@
 #home {
   margin: 0 auto;
   padding: 40px 0 104px 0;
-  width: 940px;
-  /*display: none;*/
+  max-width: 940px;
 }
 
 .home-description {
@@ -53,22 +52,21 @@
 
 .home-img {
   margin: 30px auto;
-  width: 100%;
-  height: auto;
 }
 
 .home-desktop {
-  width: 940px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .home-mobile {
   display: none;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1023px) {
+@media (max-width: 1024px) {
   #home {
-    padding: 40px 10px 104px 10px;
-    width: 100%;
+    padding: 40px 0 104px;
   }
 
   .home-img {
@@ -81,42 +79,15 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 768px) {
   #home {
-    padding: 40px 10px 104px 10px;
-    width: 100%;
-  }
-
-  .home-img {
-    margin: 33px auto 0;
-  }
-
-  .home-desktop {
-    width: 100%;
-    object-fit: cover;
+    padding: 40px 29px 83px 29px;
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 576px) {
   #home {
-    padding: 40px 10px 104px 10px;
-    width: 100%;
-  }
-
-  .home-img {
-    margin: 33px auto 0;
-  }
-
-  .home-desktop {
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-@media screen and (min-width: 425px) and (max-width: 575px) {
-  #home {
-    padding: 40px 10px 83px 10px;
-    width: 100%;
+    padding: 40px 20px 83px 20px;
   }
 
   .home-img {
@@ -137,10 +108,9 @@
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 424px) {
+@media (max-width: 425px) {
   #home {
-    width: 320px;
-    padding: 66px 0 83px 0;
+    padding: 66px 29px 83px;
   }
 
   .home-description {
@@ -166,7 +136,7 @@
 
   .home-mobile {
     display: block;
-    width: 320px;
+    width: 100%;
     object-fit: cover;
   }
   .home-subtitle {
@@ -178,10 +148,9 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media (max-width: 375px) {
   #home {
-    width: 280px;
-    padding: 66px 0 83px 0;
+    padding: 66px 29px 83px;
   }
 
   .home-description {
@@ -206,7 +175,7 @@
   }
 
   .home-mobile {
-    display: inline-block;
+    display: block;
     width: 100%;
     object-fit: cover;
   }

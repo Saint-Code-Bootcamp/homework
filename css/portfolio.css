@@ -1,57 +1,67 @@
 #portfolio {
-    padding: 113px 0 1px 0;
-    background: #F6F6F6;
-;
+  padding: 113px 0 1px 0;
+  background: #f6f6f6;
+}
+
+.portfolio-card {
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .portfolio-title {
-    margin-bottom: 47px;
-    font-family: var(--secondary-font);
-    font-size: 34px;
-    line-height: 42px;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--primary-text-color)
+  margin-bottom: 47px;
+  font-family: var(--secondary-font);
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
 }
 
 .portfolio-img {
-    display: block;
-    margin: 0 auto 85px auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 85px auto;
 }
 
 .portfolio-card_title {
-    display: block;
-    margin-bottom: 99px;
-    text-align: center;
+  display: block;
+  margin-bottom: 99px;
+  text-align: center;
 }
 
 .portfolio-link {
-    font-family: var(--primary-font);
-    font-size: 18px;
-    line-height: 22px;
-    color: var(--primary-text-color);
-    transition: 0.3s;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--primary-text-color);
+  transition: 0.3s;
 }
 
 .portfolio-link:hover {
-    color: #31C5F0;
-    transition: 0.3s;
+  color: #31c5f0;
+  transition: 0.3s;
 }
 
 /*Начало блока медиазапросов*/
 
-@media screen and (min-width: 320px) and (max-width: 991px) {
+@media (max-width: 768px) {
+  #portfolio {
+    padding: 81px 20px 4px;
+  }
+}
 
-    #portfolio {
-        padding: 81px 30px 4px 30px;
-    }
+@media (max-width: 425px) {
+  #portfolio {
+    padding: 81px 29px 4px;
+  }
 
-    .portfolio-img {
-        margin: 0 auto 33px auto;
-        width: 100%;
-    }
-    
-    .portfolio-card_title {
-        margin-bottom: 77px;
-    }
+  .portfolio-img {
+    margin: 0 auto 33px auto;
+  }
+
+  .portfolio-card_title {
+    margin-bottom: 77px;
+  }
 }
